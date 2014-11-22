@@ -10,7 +10,7 @@ class Property {
     boolean deleteStatus
 
     static hasOne = [address: Address]
-    static hasMany = [history: History, visitingList: VisitingList, rentRecord: RentRecord]
+    static hasMany = [history: History, visitingList: VisitingList, rentRecord: RentRecord, photos: Photos]
 
     static constraints = {
     }
