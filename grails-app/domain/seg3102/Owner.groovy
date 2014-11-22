@@ -2,8 +2,12 @@ package seg3102
 
 class Owner extends User{
 
-    //TODO attributes
+    /**
+     * Creates a one to many relationship between Owner and Photos.
+     */
+    static hasMany = [photos: Photos]
 
     static constraints = {
+        photos nullable: true
     }
 }

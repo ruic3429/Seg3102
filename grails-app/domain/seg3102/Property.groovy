@@ -9,6 +9,9 @@ class Property {
     double rent
     boolean deleteStatus
 
+    static hasOne = [address: Address]
+    static hasMany = [history: History, visitingList: VisitingList, rentRecord: RentRecord]
+
     static constraints = {
     }
 }

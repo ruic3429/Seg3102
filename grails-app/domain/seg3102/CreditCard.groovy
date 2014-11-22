@@ -10,6 +10,8 @@ class CreditCard {
     String expiryMonth
     String expiryYear
 
+    static belongsTo = [customer: Customer]
+
     static constraints = {
     }
 }
