@@ -8,6 +8,5 @@ class Owner extends User{
     static hasMany = [photos: Photos]
 
     static constraints = {
-        photos nullable: true
     }
 }
